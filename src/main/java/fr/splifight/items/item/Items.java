@@ -48,7 +48,7 @@ public enum Items {
     AQUATIQUE_CHESTPLATE(Material.DIAMOND_CHESTPLATE, "&c&lPlastron Aquatique", new AquatiqueChestplate()),
     MAGMA_CHESTPLATE(Material.DIAMOND_CHESTPLATE, "&c&lPlastron Magmatique", new MagmaChestplate()),
 
-    UNCLAIM_FINDER(Material.COMPASS, "&c&lUnclaim finder ", new UnClaimFinder()),
+    UNCLAIM_FINDER(Material.COMPASS, "&c&lUnclaim finder &8(&e", new UnClaimFinder()),
     CHUNK_DESTROYER(Material.BEACON, "&c&lDestructeur de chunk", new ChunkDestroyer())
     ;
 
@@ -91,7 +91,7 @@ public enum Items {
         ItemBuilder is = new ItemBuilder(item.getItemStack());
 
         if(this == UNCLAIM_FINDER) {
-            is.setName(is.toItemStack().getItemMeta().getDisplayName() + "100x");
+            is.setName(is.toItemStack().getItemMeta().getDisplayName() + "100&8)");
         }
 
         if(isWeapon()) {

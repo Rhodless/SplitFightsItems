@@ -25,12 +25,16 @@ public class UnClaimFinder extends AbstractItem implements Listener {
     public void onInteract(PlayerInteractEvent event) {
         if (!isItem(event.getItem())) return;
 
-        int uses = Integer.parseInt(event.getItem().getItemMeta().getDisplayName().replace(CC.translate(getItem().getName()), "").replace("x", ""));
+        int uses = Integer.parseInt(event.getItem().getItemMeta().getDisplayName()
+                .replace(CC.translate(getItem().getName()), "")
+                .replace("x", "")
+                .replace("§8)", "")
+        );
 
         if (uses == 1) event.getPlayer().getInventory().remove(event.getItem());
         else {
             ItemBuilder itemBuilder = new ItemBuilder(event.getItem());
-            itemBuilder.setName(CC.translate(getItem().getName() + (uses - 1) + "x"));
+            itemBuilder.setName(CC.translate(getItem().getName() + (uses - 1) + "§8)"));
             event.getPlayer().setItemInHand(itemBuilder.toItemStack());
         }
 

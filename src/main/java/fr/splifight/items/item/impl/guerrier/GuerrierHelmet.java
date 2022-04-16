@@ -76,14 +76,14 @@ public class GuerrierHelmet extends AbstractItem implements Listener {
     @EventHandler
     public void onDamage(EntityDamageEvent event) {
         if(HAVE_ARMOR.contains(event.getEntity().getUniqueId())) {
-            event.setDamage(event.getFinalDamage() * 0.9F);
+            event.setDamage(event.getDamage() * 0.9F);
         }
     }
 
     @EventHandler
     public void onDamage(EntityDamageByEntityEvent event) {
         if(HAVE_ARMOR.contains(event.getDamager().getUniqueId())) {
-            event.setDamage(event.getFinalDamage() * 1.1F);
+            event.setDamage(event.getDamage() * 1.1F);
         }
     }
 

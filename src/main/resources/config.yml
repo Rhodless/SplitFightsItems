@@ -80,7 +80,7 @@ items:
     item: DIAMOND_CHESTPLATE
     lore: []
   UNCLAIM_FINDER:
-    name: '&c&lUnclaim finder '
+    name: '&c&lUnclaim finder &8(&e'
     item: COMPASS
     lore: []
   CHUNK_DESTROYER:

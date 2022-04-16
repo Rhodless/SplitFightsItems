@@ -55,7 +55,7 @@ public class AquatiqueChestplate extends AbstractItem implements Listener {
                     HashMap<Location, Material> changedBlocks = new HashMap<>();
 
                     for (Block block : cuboid.getBlockList()) {
-                        if(block.getType().name().contains("WATER")) {
+                        if(block.getType() == Material.WATER) {
                             changedBlocks.put(block.getLocation(), block.getType());
                             block.setType(Material.ICE);
                         }
