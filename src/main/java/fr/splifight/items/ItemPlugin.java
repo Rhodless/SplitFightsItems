@@ -15,7 +15,7 @@ public class ItemPlugin extends JavaPlugin {
     public void onEnable() {
 
         instance = this;
-        saveConfig();
+        saveDefaultConfig();
         Items.init();
         Messages.init();
 

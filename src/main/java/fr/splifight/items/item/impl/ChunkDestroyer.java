@@ -33,7 +33,7 @@ public class ChunkDestroyer extends AbstractItem implements Listener {
         return Items.CHUNK_DESTROYER;
     }
 
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void onPlace(BlockPlaceEvent event) {
         if (!isItem(event.getPlayer().getItemInHand())) return;
 

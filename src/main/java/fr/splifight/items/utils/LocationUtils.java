@@ -9,6 +9,7 @@ public class LocationUtils {
         if (rotation < 0) {
             rotation += 360.0;
         }
+
         if (0 <= rotation && rotation < 22.5) {
             return "N";
         } else if (22.5 <= rotation && rotation < 67.5) {

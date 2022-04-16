@@ -28,7 +28,10 @@ public class Marteau extends AbstractItem implements Listener {
 
         Location loc = event.getBlock().getLocation();
 
-        if (charDir.equals("N") || charDir.equals("S")) {
+        if(loc.getBlockY() <= event.getPlayer().getLocation().getBlockY() - 1) {
+            Cuboid cuboid = new Cuboid(loc.clone().add(1, 0, 1), loc.clone().add(-1, 0, -1));
+            cuboid.getBlockList().forEach(block -> destroyBlock(event.getPlayer(), block));
+        } else if (charDir.equals("N") || charDir.equals("S")) {
             Cuboid cuboid = new Cuboid(loc.clone().add(0, 1, 1), loc.clone().add(0, -1, -1));
             cuboid.getBlockList().forEach(block -> destroyBlock(event.getPlayer(), block));
         } else {

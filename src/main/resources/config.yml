@@ -1,0 +1,91 @@
+messages:
+  PREFIX: '&c&lSplifight &8&l» &f'
+  CROCHETER: <prefix>&fVous avez utilisé un &acrochet&f.
+  RECOLTEUR: <prefix>&fVous avez posé un &arécolteur&f.
+  RECEIVE: <prefix>&fVous avez &areçu &fl'item &c<item>
+  USED: <prefix>&cUn hopper est déjà dans ce chunk.
+  GUERRIER_EQUIPE: <prefix>&eArmure du &6guerrier&e bien équipé.
+  GUERRIER_DESEQUIPE: <prefix>&eArmure du &6guerrier&e déséquipé.
+  AGRICULTEUR_EQUIPE: <prefix>&eArmure de &6l’agriculteur&e bien équipé.
+  AGRICULTEUR_DESEQUIPE: <prefix>&eArmure de &6l'agriculteur&e déséquipé.
+  UNCLAIM_FINDER: '&fIl y a &c<nombre>% &fd''entités'
+  COOLDOWN: <prefix>&cVous êtes encore sur un cooldown de <cooldown> secondes.
+items:
+  RECOLTEUR:
+    name: '&c&lRécolteur'
+    item: HOPPER
+    lore: []
+    farm_items:
+      - SUGAR_CANE
+  EPEE_DIEUX:
+    name: '&c&lÉpée des dieux'
+    item: DIAMOND_SWORD
+    lore:
+      - '&fReste dans ton inventaire'
+    owner_line: '&cPropriétaire: &f<owner>'
+    kill_line: '&cNombre de kills: &f'
+  ARC_DIEUX:
+    name: '&c&lArc des dieux'
+    item: BOW
+    lore:
+      - '&fReste dans ton inventaire'
+    owner_line: '&cPropriÃ©taire: &f<owner>'
+    kill_line: '&cNombre de kills: &f'
+  CROCHETEUR:
+    name: '&c&lCrocheteur'
+    item: TRIPWIRE_HOOK
+    lore: []
+  MARTEAU:
+    name: '&c&lMarteau'
+    item: DIAMOND_PICKAXE
+    lore: []
+  GUERRIER_HELMET:
+    name: '&c&lCasque du Guerrier'
+    item: DIAMOND_HELMET
+    lore: []
+  GUERRIER_CHESTPLATE:
+    name: '&c&lPlastron du Guerrier'
+    item: DIAMOND_CHESTPLATE
+    lore: []
+  GUERRIER_LEGGINGS:
+    name: '&c&lPantalon du Guerrier'
+    item: DIAMOND_LEGGINGS
+    lore: []
+  GUERRIER_BOOTS:
+    name: '&c&lBottes du Guerrier'
+    item: DIAMOND_BOOTS
+    lore: []
+  AGRICULTEUR_HELMET:
+    name: '&c&lCasque de l''Agriculteur'
+    item: LEATHER_HELMET
+    lore: []
+  AGRICULTEUR_CHESTPLATE:
+    name: '&c&lPlastron de l''Agriculteur'
+    item: LEATHER_CHESTPLATE
+    lore: []
+  AGRICULTEUR_LEGGINGS:
+    name: '&c&lPantalon de l''Agriculteur'
+    item: LEATHER_LEGGINGS
+    lore: []
+  AGRICULTEUR_BOOTS:
+    name: '&c&lBottes de l''Agriculteur'
+    item: LEATHER_BOOTS
+    lore: []
+  AQUATIQUE_CHESTPLATE:
+    name: '&c&lPlastron Aquatique'
+    item: DIAMOND_CHESTPLATE
+    lore: []
+  MAGMA_CHESTPLATE:
+    name: '&c&lPlastron Magmatique'
+    item: DIAMOND_CHESTPLATE
+    lore: []
+  UNCLAIM_FINDER:
+    name: '&c&lUnclaim finder '
+    item: COMPASS
+    lore: []
+  CHUNK_DESTROYER:
+    name: '&c&lDestructeur de chunk'
+    item: BEACON
+    lore: []
+data:
+  hoppers: []
