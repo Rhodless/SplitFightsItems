@@ -1,0 +1,9 @@
+main: fr.splifight.items.ItemPlugin
+version: 1.0.0
+api-version: 1.8.8
+author: Rhodless
+name: SplifightItems
+commands:
+  sftools:
+    aliases: sft
+    permission: sftools.use
